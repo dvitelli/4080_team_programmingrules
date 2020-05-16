@@ -87,7 +87,7 @@ int main() {
 	
 	
 
-	//test.printList();
+	//test.printQueue();
 
 	return 0;
 }

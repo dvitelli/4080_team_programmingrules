@@ -1,3 +1,6 @@
+import timeit
+start = timeit.default_timer()
+
 class Node:
     def __init__(self, num=None):
         self.num = num
@@ -35,3 +38,6 @@ e3.nextNum = e4
 
 list.addToEnd("Cherry")
 list.printList()
+
+stop = timeit.default_timer()
+print('Time: ', stop - start)  

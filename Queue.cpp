@@ -78,16 +78,15 @@ int main() {
 
 	//queue test;
 
-	//test.enqueue(4);
-	//test.enqueue(5);
-	//test.enqueue(6);
-	//test.dequeue();
-	//test.enqueue(7);
-	//test.dequeue();
-	
+	//for (int i = 0; i < 10000; i++){
+
+		//test.enqueue(rand() % 100);
+
+//}
 	
 
 	//test.printQueue();
+
 
 	return 0;
 }

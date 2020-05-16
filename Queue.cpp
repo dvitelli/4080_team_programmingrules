@@ -57,7 +57,7 @@ public:
 			rear = NULL;
 		}
 
-	} void printList() {
+	} void printQueue() {
 
 		node* temp = new node;
 		temp = front;

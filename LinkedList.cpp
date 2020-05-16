@@ -43,9 +43,12 @@ public:
 
 		node* temp = new node;
 		temp = head;
+		int counter = 1;
+
 		while (temp != NULL) {
 
-			std::cout << temp->payload << std::endl;
+			std::cout << "Payload: " << temp->payload;
+			std::cout << " Position: " << counter++ << " in linked list." << std::endl;
 			temp = temp->next;
 		}
 		
@@ -59,8 +62,8 @@ int main() {
 
 	//for (int i = 0; i < 10000; i++) {
 
-	//	int rng = rand() % 100;
-	//	test.addNode(rng);
+		//int rng = rand() % 100;
+		//test.addNode(rng);
 
 	//}
 

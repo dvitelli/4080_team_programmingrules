@@ -14,7 +14,7 @@ void swap(int *xp, int *yp)
     *yp = temp;  
 }  
   
-void bubbleSort(int arr[], int n)  
+void bubbleSort(int *arr, int n)  
 {  
     int i, j;  
     for (i = 0; i < n-1; i++)      
@@ -24,7 +24,7 @@ void bubbleSort(int arr[], int n)
             swap(&arr[j], &arr[j+1]);  
 }  
   
-void printArray(int arr[], int size)  
+void printArray(int *arr, int size)  
 {  
     int i;  
     for (i = 0; i < size; i++)  

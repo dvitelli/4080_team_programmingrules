@@ -55,16 +55,16 @@ public:
 
 int main() {
 
-	linkedList test;
+	//linkedList test;
 
-	for (int i = 0; i < 10000; i++) {
+	//for (int i = 0; i < 10000; i++) {
 
-		int rng = rand() % 100;
-		test.addNode(rng);
+	//	int rng = rand() % 100;
+	//	test.addNode(rng);
 
-	}
+	//}
 
-	test.printList();
+	//test.printList();
 
 	return 0;
 }

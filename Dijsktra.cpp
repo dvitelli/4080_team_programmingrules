@@ -10,7 +10,7 @@ using namespace std::chrono;
 
 #define V 10 
   
-int min(int distance[], bool set[]) 
+int min(int *distance, bool set[]) 
 { 
     int min = INT_MAX, min_index; 
   
@@ -21,7 +21,7 @@ int min(int distance[], bool set[])
     return min_index; 
 } 
   
-void printSolution(int dist[]) 
+void printSolution(int *dist) 
 { 
     printf("Vertex \t\t Distance from Source\n");
     printf("------ \t\t --------------------\n");
@@ -78,4 +78,4 @@ int main()
     cout << "Time taken: " << duration.count() << " ns" << endl;
   
     return 0; 
-} 
+}

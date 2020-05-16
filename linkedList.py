@@ -2,39 +2,39 @@ import timeit
 start = timeit.default_timer()
 
 class Node:
-    def __init__(self, num=None):
-        self.num = num
-        self.nextNum = None
+    def __init__(self, Frut=None):
+        self.Frut = Frut
+        self.nextFrut = None
 
 class linkedList:
     def __init__(self):
         self.front = None
 
-    def addToEnd(self, newdata):
-        NewNode = Node(newdata)
+    def addToEnd(self, Frut):
+        NewNode = Node(Frut)
         if self.front is None:
             self.front = NewNode
             return
-        laste = self.front
-        while(laste.nextNum):
-            laste = laste.nextNum
-        laste.nextNum=NewNode
+        tail = self.front
+        while(tail.nextFrut):
+            tail = tail.nextFrut
+        tail.nextFrut=NewNode
 
     def printList(self):
-        printNum = self.front
-        while printNum is not None:
-            print (printNum.num, "\n")
-            printNum = printNum.nextNum
+        printFrut = self.front
+        while printFrut is not None:
+            print (printFrut.Frut, "\n")
+            printFrut = printFrut.nextFrut
 
 
 list = linkedList()
 list.front = Node("Apple")
-e2 = Node("Pear")
-e3 = Node("Peach")
-e4 = Node("Orange")
+frut2 = Node("Pear")
+frut3 = Node("Peach")
+frut4 = Node("Orange")
 
-list.front.nextNum = e3
-e3.nextNum = e4
+list.front.nextFrut = frut3
+frut3.nextFrut = frut4
 
 list.addToEnd("Cherry")
 list.printList()
